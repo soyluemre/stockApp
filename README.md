@@ -1,10 +1,3 @@
-# Redux Toolkit Ornegi
-
-## `Kurulum`
-
-```
-npm install veya yarn
-```
 
 ## `Kullanilan Kutuphaneler`
 
