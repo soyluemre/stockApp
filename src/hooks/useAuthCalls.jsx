@@ -17,9 +17,6 @@ const useAuthCalls = () => {
 
   const BASE_URL = "https://14220.fullstack.clarusway.com/";
 
-  //! email: emre@cw.com
-  //! password: Emre123.
-
   const login = async (userInfo) => {
     dispatch(fetchStart());
     try {
