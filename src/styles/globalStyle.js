@@ -15,3 +15,10 @@ export const modalStyle = {
   boxShadow: 24,
   p: 4,
 };
+
+export const flexCenter = {
+  display: "flex",
+  justifyContent: "center",
+  flexDirection: "column",
+  gap: 2,
+};
