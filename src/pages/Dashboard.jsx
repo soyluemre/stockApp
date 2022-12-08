@@ -1,6 +1,8 @@
 import * as React from "react";
+import PropTypes from "prop-types";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
+import Button from "@mui/material/Button";
 import CssBaseline from "@mui/material/CssBaseline";
 import Divider from "@mui/material/Divider";
 import Drawer from "@mui/material/Drawer";
@@ -10,12 +12,12 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import MenuListItems from "../components/MenuListItems";
 import { blueGrey } from "@mui/material/colors";
-import Button from "@mui/material/Button";
-import { useSelector } from "react-redux";
 import useAuthCalls from "../hooks/useAuthCalls";
+import { useSelector } from "react-redux";
 import { Outlet } from "react-router-dom";
+import { Container } from "@mui/material";
 
-const drawerWidth = 240;
+const drawerWidth = 200;
 
 function Dashboard(props) {
   const { currentUser } = useSelector((state) => state.auth);
@@ -117,7 +119,7 @@ function Dashboard(props) {
           {drawer}
         </Drawer>
       </Box>
-      <Box
+      <Container
         component="main"
         sx={{
           flexGrow: 1,
@@ -127,9 +129,8 @@ function Dashboard(props) {
       >
         <Toolbar />
         <Outlet />
-      </Box>
+      </Container>
     </Box>
   );
 }
-
 export default Dashboard;

@@ -1,21 +1,3 @@
-// import axios from "axios";
-
-// const escapedToken = JSON.parse(localStorage.getItem("persist:root"))?.token;
-// const token = escapedToken && JSON.parse(escapedToken);
-
-// export const axiosWithToken = axios.create({
-//   baseURL: "https://14220.fullstack.clarusway.com/",
-//   headers: { Authorization: `Token ${token}` },
-// });
-
-// axiosWithToken.interceptors.request.use(function (config) {
-//   console.log("interseptor run");
-//   if (!config.headers["Authorization"]) {
-//     config.headers["Authorization"] = `Token ${token}`;
-//   }
-//   return config;
-// });
-
 import axios from "axios";
 
 const BASE_URL = "https://14220.fullstack.clarusway.com/";

@@ -6,10 +6,10 @@ import PrivateRouter from "./PrivateRouter";
 import Dashboard from "../pages/Dashboard";
 import Home from "../pages/Home";
 import Purchases from "../pages/Purchases";
-import Sales from "../pages/Sales";
-import Products from "../pages/Products";
-import Firms from "../pages/Firms";
 import Brands from "../pages/Brands";
+import Sales from "../pages/Sales";
+import Firms from "../pages/Firms";
+import Products from "../pages/Products";
 
 const AppRouter = () => {
   return (

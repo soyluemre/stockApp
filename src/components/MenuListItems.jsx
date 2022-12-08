@@ -9,13 +9,13 @@ import InventoryIcon from "@mui/icons-material/Inventory";
 import StoreIcon from "@mui/icons-material/Store";
 import StarsIcon from "@mui/icons-material/Stars";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
-import { useNavigate } from "react-router-dom";
 import SupervisorAccountIcon from "@mui/icons-material/SupervisorAccount";
+import { useNavigate } from "react-router-dom";
 
 const icons = [
   {
-    title: "Dashboard",
     icon: <DashboardIcon />,
+    title: "Dashboard",
     url: "/stock/",
   },
   {
@@ -49,18 +49,14 @@ const icons = [
     url: "https://14220.fullstack.clarusway.com/admin",
   },
 ];
+
 const iconStyle = {
   color: "#eee",
-  "& .MuiSvgIcon-root": {
-    color: "#fff",
-  },
-  "&:hover": {
-    color: "red",
-  },
-  "&:hover .MuiSvgIcon-root": {
-    color: "red",
-  },
+  "& .MuiSvgIcon-root": { color: "#eee" },
+  "&:hover": { color: "red" },
+  "&:hover .MuiSvgIcon-root": { color: "red" },
 };
+
 const MenuListItems = () => {
   const navigate = useNavigate();
   return (
@@ -74,6 +70,7 @@ const MenuListItems = () => {
                 <ListItemText primary={item.title} />
               </ListItemButton>
             )}
+
             {!item.url.includes("http") && (
               <ListItemButton onClick={() => navigate(item.url)} sx={iconStyle}>
                 <ListItemIcon>{item.icon}</ListItemIcon>
