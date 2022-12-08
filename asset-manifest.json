@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/stockApp/static/css/main.6523882e.css",
+    "main.js": "/stockApp/static/js/main.618ecdff.js",
+    "static/media/result.svg": "/stockApp/static/media/result.eebf37999ce8a048847f3182de8d255a.svg",
+    "index.html": "/stockApp/index.html",
+    "main.6523882e.css.map": "/stockApp/static/css/main.6523882e.css.map",
+    "main.618ecdff.js.map": "/stockApp/static/js/main.618ecdff.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6523882e.css",
+    "static/js/main.618ecdff.js"
+  ]
+}
